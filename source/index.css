@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: all 0.2s;
+}
+
+body {
+  background: #F8F8FF;
+}
+
+.slider {
+  width: 900px;
+  height: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+.slider .slider__items {
+  width: 900px;
+  height: 600px;
+  position: relative;
+}
+.slider .slider__img {
+  width: 100%;
+  height: auto;
+  height: 600px;
+  border-radius: 5px;
+}
+.slider .img__wrapper {
+  opacity: 1;
+  transition: all ease 0.8s;
+  position: absolute;
+}
+.slider .img__wrapper__info {
+  margin: 40px 0px 30px 0px;
+  line-height: 1.5;
+}
+.slider .slider__img_hide {
+  opacity: 0;
+}
+.slider .img__wrapper__headerFirst,
+.slider .img__wrapper__headerSecond,
+.slider .img__wrapper__headerThird,
+.slider .img__wrapper__headerFourth {
+  margin: 20px 0;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.slider .slider__arrow {
+  position: absolute;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  top: 280px;
+  z-index: 999;
+}
+.slider .slider__arrow_left {
+  background: url("../img/left.png");
+  left: -65px;
+}
+.slider .slider__arrow_right {
+  background: url("../img/right.png");
+  right: -65px;
+}
+
+@media screen and (max-width: 992px) {
+  .slider__arrow {
+    display: none;
+  }
+
+  .img__wrapper span {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+  }
+
+  .img__wrapper p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__arrow {
+    display: none;
+  }
+
+  .img__wrapper span {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+  }
+
+  .img__wrapper p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__arrow {
+    display: none;
+  }
+
+  .img__wrapper span {
+    text-align: center;
+    font-size: 30px;
+    display: block;
+  }
+
+  .img__wrapper p {
+    text-align: center;
+    font-size: 35px;
+    padding: 0px 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
